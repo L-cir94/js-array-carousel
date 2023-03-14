@@ -7,11 +7,11 @@
 */
 //creiamo un array con i link delle immagini 
 const carosello = [
-    '"./assets/img/01.webp"',
-    '"./assets/img/02.webp"',
-    '"./assets/img/03.webp"',
-    '"./assets/img/04.webp"',
-    '"./assets/img/05.webp"'
+    "./assets/img/01.webp",
+    "./assets/img/02.webp",
+    "./assets/img/03.webp",
+    "./assets/img/04.webp",
+    "./assets/img/05.webp"
     ]
 // 
 const containerImg = document.querySelector('.carosello')
@@ -25,5 +25,5 @@ const caroselloElement = document.querySelector('.carosello')
 
 for (let i = 0; i < carosello.length; i++){
     const imgSrc = carosello[i]
-
+const imgElement = `<img class="img-fluid ${i === activeImage ? 'active' : ''}" src="${imgSrc}" alt="">`
 }
