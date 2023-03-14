@@ -28,4 +28,5 @@ for (let i = 0; i < carosello.length; i++) {
     let classActive = i === activeImage ? 'active' : ''
     const imgElement = `<img class="img-fluid ${classActive}" src="${imgSrc}" alt="">`
     console.log(imgElement)
-    caroselloElement.document.innerHTML('')
+    caroselloElement.insertAdjacentHTML('beforeend', imgElement);
+}
