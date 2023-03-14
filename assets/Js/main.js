@@ -30,3 +30,17 @@ for (let i = 0; i < carosello.length; i++) {
     console.log(imgElement)
     caroselloElement.insertAdjacentHTML('beforeend', imgElement);
 }
+
+// select all slides
+const slideImagesElements = document.querySelectorAll('.card > .carosello > .img')  
+// listen for clicks on next button
+const nextEl = document.querySelector('.next')
+nextEl.addEventListener('click', function () {
+  console.log('cliccato next');
+  
+  
+})
+// listen for clicks on prev button
+const prevEl = document.querySelector('.prev')
+prevEl.addEventListener('click', function () {
+  console.log('cliccato prev');})
